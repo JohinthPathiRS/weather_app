@@ -1,0 +1,62 @@
+<div class="container">
+  <div class="upper-data">
+    <div *ngIf="14>15">
+      <img style="height: 40vh;" src="../assets/hot.jpeg" alt="">
+    </div>
+    <div *ngIf="14<=15">
+      <img style="height: 40vh;" src="../assets/cold.jpeg" alt="">
+    </div>
+    <div class="weather-data">
+      <div class="location">wellington</div>
+        
+        <div class="temperature">
+          {{14.40 | number: '1.0-0'}}°C
+        </div>
+      
+    </div>
+  </div>
+  <div class="lower-data">
+    <div class="more-info-label">
+      More Information
+    </div>
+    <div class="more-info-container">
+      <div class="info-block">
+        <div class="info-block-label">
+          <img src="../assets/pngwing.com (1).png" alt="" width="40">
+          <span>min</span>
+        </div>
+        <div class="info-block-value">
+          10°C
+        </div>
+      </div>
+      <div class="info-block">
+        <div class="info-block-label">
+          <img src="../assets/humidity.png" alt="" width="40">
+          <span>humidity</span>
+        </div>
+        <div class="info-block-value">
+          70%
+        </div>
+      </div>
+      <div class="info-block">
+        <div class="info-block-label">
+          <img src="../assets/kisspng-wind-chill-symbol-wind-advisory-north-bay-titania-on-emaze-5bb25b14c93ec7.8131900315384153808243.png" alt="" width="40">
+          <span>wind</span>
+        </div>
+        <div class="info-block-value">
+          11 km/h
+        </div>
+      </div>
+      <div class="info-block">
+        <div class="info-block-label">
+          <img src="../assets/kisspng-thermometer-heat-clip-art-sunburn-cartoon-5a75bc2bb32403.9100605615176653237338.png" alt="" width="20">
+          <span>max</span>
+        </div>
+        <div class="info-block-value">
+          45°C
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<router-outlet></router-outlet>
